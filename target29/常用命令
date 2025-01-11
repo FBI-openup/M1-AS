@@ -1,0 +1,13 @@
+gcc -c touch3.s
+objdump -d touch3.o > touch3.d
+
+./hex2raw < key_4.txt | ./ctarget
+cat key_4.txt | ./hex2raw | ./ctarget
+
+cookie 0x1d6f8fa5
+
+buf address 0x55671648 
+
+
+./hex2raw < key_4.txt > exploit-raw.txt
+run  < exploit-raw.txt
