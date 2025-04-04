@@ -1,3 +1,17 @@
 This is bomb 32.
+cmd line useful are
+objdump -d bomb > bombFanBianYi.asm
 
-It belongs to boyuan.zhang (boyuan.zhang@polytechnique.edu)
+
+b explode_bomb
+b phase_1
+b phase_2
+b phase_3
+b phase_4
+b phase_5
+b phase_6
+i b
+
+layout asm
+layout regs
+
